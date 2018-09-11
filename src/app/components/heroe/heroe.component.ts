@@ -10,7 +10,7 @@ export class HeroeComponent implements OnInit {
   heroe: Heroe;
 
   constructor(
-      private _activateRoute: ActivatedRoute ,
+      private _activateRoute: ActivatedRoute,
       private _heroesService: HeroesService
     ) {
     this._activateRoute.params.subscribe( params => {
