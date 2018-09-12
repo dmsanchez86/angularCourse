@@ -5,6 +5,6 @@
     <p class="card-text">{{ heroe.bio }}</p>
     <p class="card-text"><small class="text-muted">Aparición: ({{ heroe.aparicion | date:'y' }})</small></p>
 
-    <a [routerLink]="['/heroe', i]" class="btn btn-block btn-outline-primary">Ver más...</a>
+    <button (click)="seeHeroe(i)" class="btn btn-block btn-outline-primary">Ver más...</button>
   </div>
 </div>
