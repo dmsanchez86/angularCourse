@@ -2,5 +2,5 @@
 <hr>
 
 <div class="card-columns">
-  <app-heroe-tarjeta *ngFor="let heroe of heroes; let i = index" [heroe]="heroe" [i]="i"></app-heroe-tarjeta>
+  <app-heroe-tarjeta *ngFor="let heroe of heroes; let i = index" (selectedHeroe)="seeHeroe($event)" [heroe]="heroe" [i]="i"></app-heroe-tarjeta>
 </div>
